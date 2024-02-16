@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Made Andriyanov -->
+</head>
+<body id="body">
+    
+    <header>
+        <div class="container">
+            <div class="header__wrap" id="header_wrap">
+                <a class="header__wrap__a" href="/" onclick="json_response_posts();">Posts</a>
+                <a class="header__wrap__a" style="text-decoration: none;" href="/comments" onclick="json_response_comments();">Comments</a>
+                <a class="header__wrap__a" style="text-decoration: none;" href="/users" onclick="json_response_users();">Users</a>
+                <a class="header__wrap__a__join" style="text-decoration: none;" href="/join" id="button_join">Join</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="section">
+        <div style="display: flex;" id="page_posts">
+            <!--
+            <div class="form__block">
+                <h2 class="form__block__h2">Создать пост</h2>
+     
+                    <legend class="form__block__legend">Заголовок</legend>
+                    <textarea class="form__block__textarea" id="input_title"></textarea>
+    
+                    <legend class="form__block__legend">Текст</legend>
+                    <textarea class="form__block__textarea" id="input_text"></textarea>
+    
+                    <hr class="form__block__hr">
+    
+                    <button class="form__block__button" onclick="create_post()">Сохранить</button>
+            </div>
+            -->
+
+            <div class="posts__block" id="block" style="margin: 0 auto; margin-top: 25px;">
+                <div class="posts__block__text">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Made Andriyanov -->
+
+</body>
+</html>

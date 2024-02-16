@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Made Andriyanov -->
+</head>
+<body id="body">
+    
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a class="header__wrap__a" href="/" onclick="json_response_posts();">Posts</a>
+                <a class="header__wrap__a" style="text-decoration: none;" href="/comments" onclick="json_response_comments();">Comments</a>
+                <a class="header__wrap__a" style="text-decoration: none;" href="/users" onclick="json_response_users();">Users</a>
+                <a class="header__wrap__a__join" style="text-decoration: none;" href="/join">Join</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="section">
+            <div class="join__block">
+                <h2 class="join__block__title">Вход</h2>
+                <hr class="join__block__hr">
+    
+                <div style="padding: 50px; padding-top: 25px;">
+                    <legend class="join__block__legend">Логин</legend>
+                    <input class="join__block__input" id="auth_username">
+    
+                    <legend class="join__block__legend" style="padding-top: 30px;">Пароль</legend>
+                    <input class="join__block__input" id="auth_password">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <a class="join__block__button" onclick="auth_user(); json_response_posts();" href="/">Войти</a>
+                    <a class="join__block__registr" href="/reg">Регистрация</a>
+            
+                </div>
+            </div>
+    </section>
+    
+    <!-- Made Andriyanov -->
+
+</body>
+</html>
